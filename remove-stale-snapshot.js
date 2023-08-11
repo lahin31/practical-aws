@@ -5,7 +5,7 @@ const ec2 = new AWS.EC2();
 
 exports.handler = async (event, context) => {
   try {
-    const retentionDays = 30; // Define your retention period in days
+    const retentionDays = 60; // Define your retention period in days
     const now = new Date();
 
     const describeSnapshotsParams = {
